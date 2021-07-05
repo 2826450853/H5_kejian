@@ -72,6 +72,26 @@
     background-color:#2ABB9B;
     animation: road_runner 2s;
   }
+  .color1{
+    background-color:#3bbb2a;
+    animation: road_runner 2s;
+  }
+  .color2{
+    background-color:#54dbb3;
+    animation: road_runner 2s;
+  }
+  .color3{
+    background-color:#99bb2a;
+    animation: road_runner 2s;
+  }
+  .color4{
+    background-color:#d67373;
+    animation: road_runner 2s;
+  }
+  .color5{
+    background-color:#76d3d3;
+    animation: road_runner 2s;
+  }
 
   /*End CSS example*/
   
