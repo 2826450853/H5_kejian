@@ -6,8 +6,8 @@
     position: absolute;
   }
   .accordion .item .heading {
-    height: 5vh;
-    line-height: 5vh;
+    height: 4vh;
+    line-height: 4vh;
     font-size: 2vh;
     cursor: pointer;
     color: #fff;
@@ -34,9 +34,9 @@
   }
 
   .accordion .item .content {
-    padding: 0px 20px;
+    padding: 0px 0px;
     background: rgb(238, 238, 238,0);
-    font-size: 2vh;
+    font-size: 1.7vh;
     height:0;
     cursor:text;
     overflow:hidden;
@@ -49,8 +49,8 @@
   
   .accordion .item.open .content {
     height: 20vh;
-    padding-top: 10px;
-    padding-bottom: 100px;
+    padding-top: 1vh;
+    padding-bottom: 10vh;;
 
   }
   
