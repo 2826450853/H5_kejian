@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:rgb(255, 253, 221);
+    font-family: '楷体';
+    overflow: hidden;
+}
+
+#header_div{
+    width:100vw;
+    height:100vh;
+  }
+  
+  .baidu{
+    background-color: rgb(59, 183, 255);
+    width:10vw;
+    height: 5vh;
+    position:absolute;
+    bottom: 10vh;
+    right:10vw;
+    line-height: 5vh;
+    font-size: 1vw;
+    cursor: pointer;
+    color: rgb(226, 255, 131);
+    padding-left: 15px;
+    background-position: right 20px top -95px;
+    border-bottom: 0px solid #ec8484;
+    box-sizing: border-box;
+    border-radius: 1vh;
+    box-shadow:rgba(72, 122, 189, 0.3)  -0.5vw 0.5vh;
+  }
+  .baidu a{
+   text-decoration: none;
+   color: rgb(247, 255, 211);
+   margin-right: 2vw;
+  }
+
+
+   
+.baidu_road_runner{
+    animation: road_runner 2s;
+   }
+.baidu_flipInX{
+    animation: rubberBand 1s;
+   }
+
+.p1{
+    margin:0;
+    padding:0;
+    font-size:1.5vh;
+    background-color: rgba(218, 204, 158, 0.5);
+    border-radius: 5%;
+    cursor: pointer;
+    font-weight:900;
+    float: left;
+    color:rgb(36, 96, 148);
+    display:block;
+    margin-left:0.25vw;
+    width:18vw;
+}
+.p2{
+    margin:0;
+    padding:0;
+    font-size:1.4vh;
+    background-color: rgba(218, 204, 158, 0.5);
+    border-radius: 5%;
+    cursor: pointer;
+    font-weight:900;
+    float: left;
+    color:rgb(36, 96, 148);
+    display:block;
+    margin-left:0.25vw;
+    width:18vw;
+}
+.p3{
+    margin:0;
+    padding:0;
+    font-size:2vh;
+    background-color: rgba(218, 204, 158, 0.5);
+    border-radius: 5%;
+    cursor: pointer;
+    font-weight:900;
+    float: left;
+    color:rgb(36, 96, 148);
+    display:block;
+    margin-left:0.25vw;
+    width:18vw;
+}
+
+
+
+.header_a{
+    width:10vw;
+    height: 5vh;
+    display: block;
+    margin-left: -15px;
+    text-align: center;
+}
+.passage1{
+    width:20vw;
+    height:70vh;
+    position:absolute;
+    top:10vh;
+    left:25vw;
+    background-color: #e2cac2;
+    box-shadow:rgba(170, 144, 89, 0.2) -0.75vw 0.75vh;
+    border-radius:2vh;
+    animation: spaceInDown 1s;
+}
+.passage2{
+    width:20vw;
+    height:70vh;
+    position:absolute;
+    top:10vh;
+    left:50vw;
+    background-color: #aee0d0;
+    box-shadow:rgba(89, 170, 123, 0.2) -0.75vw 0.75vh;
+    border-radius:2vh;
+    animation: spaceInDown 1s;
+}
+.passage3{
+    width:20vw;
+    height:70vh;
+    position:absolute;
+    top:10vh;
+    left:75vw;
+    background-color: #b3cce9;
+    box-shadow:rgba(97, 88, 177, 0.2) -0.75vw 0.75vh;
+    border-radius:2vh;
+    animation: spaceInDown 1s;
+}
+.passage_header{
+    margin:0;
+    padding:0;
+    width:70vw;
+    height: 7vh;
+    background-color: rgb(230, 167, 96);
+    box-shadow:rgba(160, 72, 37, 0.2) -0.5vw 0.5vh;
+    position:absolute;
+    top: 1vh;
+    left: 25vw;
+    border-radius: 2vh;
+    color:#aee0d0;
+    animation: road_runner 2s;
+}
+.header_passage_image{
+    width:70vw;
+    height:7vh;
+    background:url("/PS/headerpassage.png") no-repeat;
+    background-size: 100% 100%;
+}
+.passage_image1{
+    width:20vw;
+    height:70vh;
+    background:url("PS/passage_image1.png");
+    background-size: 100% 100%;
+}
+.passage_image2{
+    width:20vw;
+    height:70vh;
+    background:url("PS/passage_image2.png");
+    background-size: 100% 100%;
+}
+.passage_image3{
+    width:20vw;
+    height:70vh;
+    background:url("PS/passage_image3.png");
+    background-size: 100% 100%;
+}
+.passage_image4{
+    width:20vw;
+    height:70vh;
+    background:url("PS/passage_image4.png");
+    background-size: 100% 100%;
+}
+.passage_image5{
+    width:20vw;
+    height:70vh;
+    background:url("PS/passage_image5.png");
+    background-size: 100% 100%;
+}
+.passage_image6{
+    width:20vw;
+    height:70vh;
+    background:url("PS/passage_image6.png");
+    background-size: 100% 100%;
+}
+.passage_image7{
+    width:20vw;
+    height:70vh;
+    background:url("PS/passage_image7.png");
+    background-size: 100% 100%;
+}
+.passage_image8{
+    width:20vw;
+    height:70vh;
+    background:url("PS/passage_image8.png");
+    background-size: 100% 100%;
+}
+.passage_image9{
+    width:20vw;
+    height:70vh;
+    background:url("PS/passage_image9.png");
+    background-size: 100% 100%;
+}

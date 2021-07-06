@@ -68,9 +68,15 @@
 
 
         <div id="header_div">
-        <div class="div1" v-if="seen1" :class="{ div_flipInX:f1 ,div_hover_shanshuo: c1}" @mouseenter="onmouseenter1"><a class="a_1" href="feng.html">风</a></div>
-        <div class="div2" v-if="seen2"  :class="{ div_flipInX:f2,div_hover_shanshuo: c2 }" @mouseenter="onmouseenter2"><a class="a_2" href="ya.html">雅</a></div>
-        <div class="div3" v-if="seen3"  :class="{div_flipInX:f3, div_hover_shanshuo: c3 }" @mouseenter="onmouseenter3"><a class="a_3" href="song.html">颂</a></div>
+        <div class="div1" v-if="seen1" :class="{ div_flipInX:f1 ,div_hover_shanshuo: c1}" @mouseenter="onmouseenter1"><a class="a_1" href="feng.html">
+          <div class="feng_image"></div>
+        </a></div>
+        <div class="div2" v-if="seen2"  :class="{ div_flipInX:f2,div_hover_shanshuo: c2 }" @mouseenter="onmouseenter2"><a class="a_2" href="ya.html">
+          <div class="ya_image"></div>
+        </a></div>
+        <div class="div3" v-if="seen3"  :class="{div_flipInX:f3, div_hover_shanshuo: c3 }" @mouseenter="onmouseenter3"><a class="a_3" href="song.html">
+          <div class="song_image"></div>
+        </a></div>
         <div class="baidu" :class="{baidu_road_runner:r1,baidu_flipInX:bf1}" @mouseenter="onmouseenter4"><a class="baidu_a" href="https://baike.baidu.com/item/%E8%AF%97%E7%BB%8F/168138?fr=aladdin" target="_blank"><strong>查看百度词条</strong></a></div>
         <div class="shuqian" v-if="sf1" @mouseenter="onmouseenter5" :class="{shuqian_bounce:sb1,shuqian_fadeInDown:sf2}" ></div>
         </div>
