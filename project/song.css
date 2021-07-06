@@ -12,7 +12,7 @@ body{
   }
   
   .baidu{
-    background-color: rgb(59, 183, 255);
+    background-color: rgb(255, 121, 59);
     width:10vw;
     height: 5vh;
     position:absolute;
@@ -27,6 +27,7 @@ body{
     border-bottom: 0px solid #ec8484;
     box-sizing: border-box;
     border-radius: 1vh;
+    box-shadow:rgba(189, 129, 72, 0.3) -0.75vw 0.75vh;
   }
   .baidu a{
    text-decoration: none;

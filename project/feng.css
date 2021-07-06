@@ -27,6 +27,7 @@ body{
     border-bottom: 0px solid #ec8484;
     box-sizing: border-box;
     border-radius: 1vh;
+    box-shadow:rgba(72, 122, 189, 0.3) -0.75vw 0.75vh;
   }
   .baidu a{
    text-decoration: none;
