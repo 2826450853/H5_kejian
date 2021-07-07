@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            答题
+        </title>
+        <!-- vue.js 文件 -->
+        <script src="vue.js"></script>
+        <!-- AniJS CSS文件 -->
+        <link  rel= "stylesheet"  href= "Ani_css.css" >
+        <!-- AniJS CSS文件 -->
+        <link  rel= "stylesheet"  href= "Ani_css.css" >
+        <link rel="stylesheet" href="bounce.css">
+        <link rel="stylesheet" href="answers.css">
+        <link rel="stylesheet" href="magic.css">
+    </head>
+    <body>
+        <div id="header">
+        <div  v-if="seen" class="pace" :class="{ road_runner: road_runner,disable:disable}">
+            <div v-if="pace[0]" class="pace_box"></div>
+            <div v-if="pace[1]" class="pace_box"></div>
+            <div v-if="pace[2]" class="pace_box"></div>
+            <div v-if="pace[3]" class="pace_box"></div>
+            <div v-if="pace[4]" class="pace_box"></div>
+            <div v-if="pace[5]" class="pace_box"></div>
+            <div v-if="pace[6]" class="pace_box"></div>
+            <div v-if="pace[7]" class="pace_box"></div>
+            <div v-if="pace[8]" class="pace_box"></div>
+            <div v-if="pace[9]" class="pace_box"></div>
+        </div>
+        
+        <div  v-if="seen"  class="question"  :class="{ perspectiveLeftReturn: perspectiveLeftReturn,perspectiveLeftReturn_fast:perspectiveLeftReturn_fast}" v-html="question"></div>
+        <div  v-if="seen"  class='answers1' :class="{ road_runner: road_runner,flipInX: flipInX,selected:selected_A,disable:disable}" v-html="answer1" @click="selectA"></div>
+        <div  v-if="seen"  class='answers2' :class="{ road_runner: road_runner,flipInX: flipInX,selected:selected_B,disable:disable}" v-html="answer2" @click="selectB"></div>
+        <div  v-if="seen"  class='answers3' :class="{ road_runner: road_runner,flipInX: flipInX,selected:selected_C,disable:disable}" v-html="answer3" @click="selectC"></div>
+        <div  v-if="seen"  class='answers4' :class="{ road_runner: road_runner,flipInX: flipInX,selected:selected_D,disable:disable}" v-html="answer4" @click="selectD"></div>
+
+
+
+        <div  v-if="seen"  class="next"  :class="{ road_runner: road_runner,disable:disable2}"  @click="mouse_next"><p>下一题</p></div>
+        <div  v-if="seen"  class="after"  :class="{ road_runner: road_runner,disable:disable2}" @click="mouse_after"><p>上一题</p></div>
+        <div  v-if="seen"  class="submit"  :class="{ road_runner: road_runner,disable:disable}" @click="submit"><p>提交答案</p></div>
+        <a v-if="seen" href="index.html"><div  class="index"  :class="{ road_runner: road_runner,disable:disable2}"><p>返回首页</p></div></a>
+        <div v-if="alert_seen" class="alert" @click="click_alert"><p>请完成所有题目再提交！！<br>点击确定！</p></div>
+
+
+        <div v-if="seen1" class="complete"><p>你的得分：{{score*10}}<br>总分100<br><br>&#12288&#12288答案将用蓝绿色标出</p></div>
+        <div v-if="seen1" class="reseen" @click="re_seen"><p>查看答案</p></div>
+    </div>
+
+
+
+    </body>
+    <script src="answers.js"></script>
+
+</html>
