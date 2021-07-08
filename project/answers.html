@@ -30,22 +30,22 @@
         </div>
         
         <div  v-if="seen"  class="question"  :class="{ perspectiveLeftReturn: perspectiveLeftReturn,perspectiveLeftReturn_fast:perspectiveLeftReturn_fast}" v-html="question"></div>
-        <div  v-if="seen"  class='answers1' :class="{ road_runner: road_runner,flipInX: flipInX,selected:selected_A,disable:disable}" v-html="answer1" @click="selectA"></div>
-        <div  v-if="seen"  class='answers2' :class="{ road_runner: road_runner,flipInX: flipInX,selected:selected_B,disable:disable}" v-html="answer2" @click="selectB"></div>
-        <div  v-if="seen"  class='answers3' :class="{ road_runner: road_runner,flipInX: flipInX,selected:selected_C,disable:disable}" v-html="answer3" @click="selectC"></div>
-        <div  v-if="seen"  class='answers4' :class="{ road_runner: road_runner,flipInX: flipInX,selected:selected_D,disable:disable}" v-html="answer4" @click="selectD"></div>
+        <div  v-if="seen"  class='answers1' :class="{ road_runner: road_runner,flipInX: flipInX,correct_option:correct_option1,selected:selected_A,disable:disable}" v-html="answer1" @click="selectA"></div>
+        <div  v-if="seen"  class='answers2' :class="{ road_runner: road_runner,flipInX: flipInX,correct_option:correct_option2,selected:selected_B,disable:disable}" v-html="answer2" @click="selectB"></div>
+        <div  v-if="seen"  class='answers3' :class="{ road_runner: road_runner,flipInX: flipInX,correct_option:correct_option3,selected:selected_C,disable:disable}" v-html="answer3" @click="selectC"></div>
+        <div  v-if="seen"  class='answers4' :class="{ road_runner: road_runner,flipInX: flipInX,correct_option:correct_option4,selected:selected_D,disable:disable}" v-html="answer4" @click="selectD"></div>
 
 
 
-        <div  v-if="seen"  class="next"  :class="{ road_runner: road_runner,disable:disable2,click_ed:click_ed11}"  @click="mouse_next" @mousedown="click_ed1" @mouseup="click_ed_end1"><p>下一题</p></div>
-        <div  v-if="seen"  class="after"  :class="{ road_runner: road_runner,disable:disable2,click_ed:click_ed22}" @click="mouse_after" @mousedown="click_ed2" @mouseup="click_ed_end2"><p>上一题</p></div>
-        <div  v-if="seen"  class="submit"  :class="{ road_runner: road_runner,disable:disable,click_ed:click_ed33}" @click="submit" @mousedown="click_ed3" @mouseup="click_ed3"><p>提交答案</p></div>
-        <a v-if="seen" href="index.html"><div  class="index"  :class="{ road_runner: road_runner,disable:disable2,click_ed:click_ed44}" @mousedown="click_ed4" @mouseup="click_ed_end4"><p>返回首页</p></div></a>
+        <div  v-if="seen"  class="next"  :class="{ road_runner: road_runner,disable:disable2,click_ed:click_ed11}"  @click="mouse_next" @mousedown="click_ed1" @mouseup="click_ed_end1"@mouseout="click_ed_end1"><p>下一题</p></div>
+        <div  v-if="seen"  class="after"  :class="{ road_runner: road_runner,disable:disable2,click_ed:click_ed22}" @click="mouse_after" @mousedown="click_ed2" @mouseup="click_ed_end2"@mouseout="click_ed_end2"><p>上一题</p></div>
+        <div  v-if="seen"  class="submit"  :class="{ road_runner: road_runner,disable:disable,click_ed:click_ed33}" @click="submit" @mousedown="click_ed3" @mouseup="click_ed_end3"@mouseout="click_ed_end3"><p>提交答案</p></div>
+        <a v-if="seen" href="index.html"><div  class="index"  :class="{ road_runner: road_runner,disable:disable2,click_ed:click_ed44}" @mousedown="click_ed4" @mouseup="click_ed_end4"@mouseout="click_ed_end4"><p>返回首页</p></div></a>
         <div v-if="alert_seen" class="alert" @click="click_alert"><p>请完成所有题目再提交！！<br>点击确定！</p></div>
 
 
-        <div v-if="seen1" class="complete"><p>你的得分：{{score*10}}<br>总分100<br><br>&#12288&#12288答案将用蓝绿色标出</p></div>
-        <div v-if="seen1" class="reseen" :class="{click_ed:click_ed55}" @click="re_seen" @mousedown="click_ed5" @mouseup="click_ed_end5"><p>查看答案</p></div>
+        <div v-if="seen1" class="complete"><p>你的得分：{{score*10}}<br>总分100<br><br>&#12288&#12288答案将用红色标出</p></div>
+        <div v-if="seen1" class="reseen" :class="{click_ed:click_ed55}" @click="re_seen" @mousedown="click_ed5" @mouseup="click_ed_end5"@mouseout="click_ed_end5"><p>查看答案</p></div>
     </div>
 
 

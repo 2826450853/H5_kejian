@@ -17,7 +17,6 @@ const Test = {
                 "<p class='question_text'>8. “执子之手，与子偕老”出自中()</p>",
                 "<p class='question_text'>9. “雷填填兮雨冥冥，猿啾啾兮狖夜鸣”出自于()</p>",
                 "<p class='question_text'>10. 《诗经》最晚的作品成于()</p>",
-
             ],
             answers_text:[
                 ["<p class='answers_text'>A、《民歌》  </p>","<p class='answers_text'>B、《诗歌》  </p>","<p class='answers_text'>C、《诗》  </p>","<p class='answers_text'>D、《诗两百》  </p>"],
@@ -46,6 +45,7 @@ const Test = {
             selected_C:null,
             selected_D:null,
             select_vector:[[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]],
+            select_vector1:[[0,0,1,0],[1,0,0,0],[0,0,1,0],[0,0,1,0],[0,0,0,1],[0,1,0,0],[1,0,0,0],[1,0,0,0],[0,1,0,0],[1,0,0,0]],
             score:0,
             seen:true,
             seen1:false,
@@ -58,6 +58,11 @@ const Test = {
             click_ed33:false,
             click_ed44:false,
             click_ed55:false,
+            correct_option1:false,
+            correct_option2:false,
+            correct_option3:false,
+            correct_option4:false,
+            correct_numbers:[0,0,0,0,0,0,0,0,0,0],
 
         }
     },
@@ -65,20 +70,15 @@ const Test = {
         re_seen(){
             this.seen=true;
             this.seen1=false;
-            this.select_vector=[[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]];
-            this.set_select();
             this.questions_number=0;
             this.pace=[1];
             this.perspectiveLeftReturn=true;
             this.road_runner=true;
             this.show();
             this.disable=true;
-            this.correct_answer_select_set();
             this.set_select();
-            console.log(this.select_vector);
             console.log(this.questions_number);
         },
-
         mouse_next(){
             if(this.pace.length<10){
             this.pace.push(1);
@@ -164,6 +164,12 @@ const Test = {
             this.selected_B=this.select_vector[this.questions_number][1];
             this.selected_C=this.select_vector[this.questions_number][2];
             this.selected_D=this.select_vector[this.questions_number][3];
+            if(this.disable==true){
+                this.correct_option1=this.select_vector1[this.questions_number][0];
+                this.correct_option2=this.select_vector1[this.questions_number][1];
+                this.correct_option3=this.select_vector1[this.questions_number][2];
+                this.correct_option4=this.select_vector1[this.questions_number][3];
+                }
         },
 
         reset_select(){
@@ -180,18 +186,13 @@ const Test = {
                 else if(this.select_vector[i][1]==1) this.people_answers[i]='B';
                 else if(this.select_vector[i][2]==1) this.people_answers[i]='C';
                 else if(this.select_vector[i][3]==1) this.people_answers[i]='D';
-                if(this.source_answers[i]==this.people_answers[i]) this.score++;
+                if(this.source_answers[i]==this.people_answers[i]){
+                    this.score++;
+                    this.correct_numbers[i]=1;
+                } 
             }
             console.log(this.people_answers);
             console.log(this.score);
-        },
-        correct_answer_select_set(){
-            for(i=0;i<10;i++){
-                if(this.source_answers[i]=='A') this.select_vector[i][0]=1;
-                else if(this.source_answers[i]=='B') this.select_vector[i][1]=1;
-                else if(this.source_answers[i]=='C') this.select_vector[i][2]=1;
-                else if(this.source_answers[i]=='D') this.select_vector[i][3]=1;
-            }
         },
         submit(){
             this.submit_answers();
@@ -209,9 +210,6 @@ const Test = {
                 this.disable=true;
                 this.disable2=true;
             }
-        },
-        index(){
-
         },
         click_alert(){
                 this.alert_seen=false;
