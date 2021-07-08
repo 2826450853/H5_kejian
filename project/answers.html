@@ -37,15 +37,15 @@
 
 
 
-        <div  v-if="seen"  class="next"  :class="{ road_runner: road_runner,disable:disable2}"  @click="mouse_next"><p>下一题</p></div>
-        <div  v-if="seen"  class="after"  :class="{ road_runner: road_runner,disable:disable2}" @click="mouse_after"><p>上一题</p></div>
-        <div  v-if="seen"  class="submit"  :class="{ road_runner: road_runner,disable:disable}" @click="submit"><p>提交答案</p></div>
-        <a v-if="seen" href="index.html"><div  class="index"  :class="{ road_runner: road_runner,disable:disable2}"><p>返回首页</p></div></a>
+        <div  v-if="seen"  class="next"  :class="{ road_runner: road_runner,disable:disable2,click_ed:click_ed11}"  @click="mouse_next" @mousedown="click_ed1" @mouseup="click_ed_end1"><p>下一题</p></div>
+        <div  v-if="seen"  class="after"  :class="{ road_runner: road_runner,disable:disable2,click_ed:click_ed22}" @click="mouse_after" @mousedown="click_ed2" @mouseup="click_ed_end2"><p>上一题</p></div>
+        <div  v-if="seen"  class="submit"  :class="{ road_runner: road_runner,disable:disable,click_ed:click_ed33}" @click="submit" @mousedown="click_ed3" @mouseup="click_ed3"><p>提交答案</p></div>
+        <a v-if="seen" href="index.html"><div  class="index"  :class="{ road_runner: road_runner,disable:disable2,click_ed:click_ed44}" @mousedown="click_ed4" @mouseup="click_ed_end4"><p>返回首页</p></div></a>
         <div v-if="alert_seen" class="alert" @click="click_alert"><p>请完成所有题目再提交！！<br>点击确定！</p></div>
 
 
         <div v-if="seen1" class="complete"><p>你的得分：{{score*10}}<br>总分100<br><br>&#12288&#12288答案将用蓝绿色标出</p></div>
-        <div v-if="seen1" class="reseen" @click="re_seen"><p>查看答案</p></div>
+        <div v-if="seen1" class="reseen" :class="{click_ed:click_ed55}" @click="re_seen" @mousedown="click_ed5" @mouseup="click_ed_end5"><p>查看答案</p></div>
     </div>
 
 

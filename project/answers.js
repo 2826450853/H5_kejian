@@ -53,6 +53,11 @@ const Test = {
             disable:false,
             alert_seen:false,
             disable2:false,
+            click_ed11:false,
+            click_ed22:false,
+            click_ed33:false,
+            click_ed44:false,
+            click_ed55:false,
 
         }
     },
@@ -205,12 +210,45 @@ const Test = {
                 this.disable2=true;
             }
         },
+        index(){
+
+        },
         click_alert(){
                 this.alert_seen=false;
                 this.disable=false;
                 this.disable2=false;
-        }
-
+        },
+        click_ed1(){
+            this.click_ed11=true;
+        },
+        click_ed2(){
+            this.click_ed22=true;
+        },
+        click_ed3(){
+            this.click_ed33=true;
+        },
+        click_ed4(){
+            this.click_ed44=true;
+        },
+        click_ed5(){
+            this.click_ed55=true;
+        },
+        
+        click_ed_end1(){
+            this.click_ed11=false;
+        },
+        click_ed_end2(){
+            this.click_ed22=false;
+        },
+        click_ed_end3(){
+            this.click_ed33=false;
+        },
+        click_ed_end4(){
+            this.click_ed44=false;
+        },
+        click_ed_end5(){
+            this.click_ed55=false;
+        },
 
     }
 }

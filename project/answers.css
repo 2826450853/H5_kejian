@@ -1,6 +1,12 @@
 *{
     padding: 0;
     margin: 0;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 body{
     background-color:rgb(255, 253, 221);
@@ -274,4 +280,9 @@ font-size:5vh;
 position:absolute;
 top: 6vh;
 left: 2vw;
+}
+
+.click_ed{
+    background:rgb(52, 175, 163);
+    color: white;
 }
