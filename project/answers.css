@@ -123,7 +123,9 @@ body{
 .question{
     width:25vw;
     height:60vh;
-    background-color:rgba(228, 248, 191, 0.678);
+    /* background-color:rgba(228, 248, 191, 0.678); */
+    background: url(PS/wangge.png);
+    background-size: 100% 100%;
     position:absolute;
     top: 10vh;
     left:5vw;
@@ -276,7 +278,7 @@ top: 6vh;
 left: 2vw;
 }
 .click_ed{
-    background:rgb(52, 175, 163);
+    background:rgb(83, 83, 83);
     color: white;
 }
 .correct_option{

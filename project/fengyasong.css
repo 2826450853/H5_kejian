@@ -109,6 +109,7 @@ body{
     top:10vh;
     left:25vw;
     background-color: #e2cac2;
+    background-size: 100% 100;
     box-shadow:rgba(170, 144, 89, 0.2) -0.75vw 0.75vh;
     border-radius:2vh;
     animation: spaceInDown 1s;
