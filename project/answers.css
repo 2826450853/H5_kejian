@@ -205,7 +205,7 @@ body{
 }
 
 .selected{
-    background:rgb(52, 175, 163);
+    background:rgb(53, 53, 53);
     color: white;
 }
 
@@ -256,8 +256,6 @@ body{
 .disable {
 	pointer-events: none;
 }
-
-
 .alert{
     width:40vw;
     height: 20vh;
@@ -277,12 +275,11 @@ position:absolute;
 top: 6vh;
 left: 2vw;
 }
-
 .click_ed{
     background:rgb(52, 175, 163);
     color: white;
 }
 .correct_option{
-    background:rgb(240, 58, 58);
+    background:rgb(0, 214, 89);
     color: black;
 }

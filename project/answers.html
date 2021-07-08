@@ -44,7 +44,7 @@
         <div v-if="alert_seen" class="alert" @click="click_alert"><p>请完成所有题目再提交！！<br>点击确定！</p></div>
 
 
-        <div v-if="seen1" class="complete"><p>你的得分：{{score*10}}<br>总分100<br><br>&#12288&#12288答案将用红色标出</p></div>
+        <div v-if="seen1" class="complete"><p>你的得分：{{score*10}}<br>总分100<br><br>&#12288&#12288答案将用绿色标出</p></div>
         <div v-if="seen1" class="reseen" :class="{click_ed:click_ed55}" @click="re_seen" @mousedown="click_ed5" @mouseup="click_ed_end5"@mouseout="click_ed_end5"><p>查看答案</p></div>
     </div>
 
