@@ -37,6 +37,7 @@
     padding: 0px 20px;
     background: rgb(229, 228, 236，0);
     font-size: 2vh;
+    line-height: 3vh;
     height:0;
     cursor:text;
     overflow:hidden;

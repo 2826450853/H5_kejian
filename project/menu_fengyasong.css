@@ -50,7 +50,8 @@
   .accordion .item.open .content {
     height: 20vh;
     padding-top: 1vh;
-    padding-bottom: 10vh;;
+    padding-bottom: 10vh;
+    color: #000000;
 
   }
   
