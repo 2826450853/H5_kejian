@@ -22,8 +22,8 @@ body{
     width:10vw;
     height: 5vh;
     position:absolute;
-    bottom: 10vh;
-    right:10vw;
+    bottom: 5vh;
+    right:5vw;
     line-height: 5vh;
     font-size: 1vw;
     cursor: pointer;
@@ -42,7 +42,7 @@ body{
   }
 
 
-   
+
 .baidu_road_runner{
     animation: road_runner 2s;
    }
@@ -209,4 +209,43 @@ body{
     height:70vh;
     background:url("PS/passage_image9.png");
     background-size: 100% 100%;
+}
+.audio1{
+    cursor: pointer;
+    position:absolute;
+    top: 10vh;
+    left:42vw;
+    background: url("PS/喇叭.png");
+    background-size: 100% 100%;
+    border-radius:2vh;
+    width:3vw;
+    height:3vw;
+    z-index: 2;
+    animation: spaceInDown 2s;
+}
+.audio2{
+    cursor: pointer;
+    position:absolute;
+    top: 10vh;
+    left:67vw;
+    background: url("PS/喇叭.png");
+    background-size: 100% 100%;
+    border-radius:2vh;
+    width:3vw;
+    height:3vw;
+    z-index: 2;
+    animation: spaceInDown 2s;
+}
+.audio3{
+    cursor: pointer;
+    position:absolute;
+    top: 10vh;
+    left:92vw;
+    background: url("PS/喇叭.png");
+    background-size: 100% 100%;
+    border-radius:2vh;
+    width:3vw;
+    height:3vw;
+    z-index: 2;
+    animation: spaceInDown 2s;
 }

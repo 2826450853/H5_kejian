@@ -25,7 +25,7 @@
             <div class="item" data-anijs="if:mouseenter, on: .heading, do: pulse animated, to: $children target">
                 <div class="heading blue">
               <i class="fa fa-bell"></i>
-              <span>颂篇</span>
+              <span>颂篇目录</span>
               <i class="fa fa-chevron-circle-down"></i>
             </div>
                 <div class="content"><strong>《颂》共有40篇。
@@ -175,9 +175,13 @@
 
             <div div class="baidu" :class="{baidu_road_runner:r1,baidu_flipInX:bf1}" @mouseenter="onmouseenter4"><a class="header_a" href="index.html"><strong>返回首页</strong></a></div>
         </div>
+        <div class="audio1"  onClick="play1()" ><audio id="music1" src="Audio/丝衣.mp3" loop autoplay></audio></div>
+        <div class="audio2"  onClick="play2()" ><audio id="music2" src="Audio/玄鸟.mp3" loop autoplay></audio></div>
+        <div class="audio3"  onClick="play3()" ><audio id="music3" src="Audio/清庙.mp3" loop autoplay></audio></div>
 
         <script src="anijs.js"></script>
         <script src="anijs-helper-dom.js"></script>
+        <script src="audio.js"></script>
 </body>
 <script src="fengyasong.js"></script>
 </html>
